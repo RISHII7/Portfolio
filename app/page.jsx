@@ -4,6 +4,7 @@ import { useEffect } from "react";
 
 // Components
 import Hero from "@/components/Hero";
+import FixedMenu from "@/components/FixedMenu";
 import Services from "@/components/Services";
 import About from "@/components/About";
 import Journey from "@/components/Journey";
@@ -23,8 +24,9 @@ export default function Home() {
 
 
   return (
-    <div>
+    <>
       <Hero />
+      <FixedMenu />
       <Services />
       <About />
       <Journey />
@@ -32,6 +34,6 @@ export default function Home() {
       <Contact />
       {/* Temporary Div */}
       <div className="h-[3000px]"></div>
-    </div>
+    </>
   );
 }

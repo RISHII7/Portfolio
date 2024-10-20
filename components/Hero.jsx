@@ -10,7 +10,7 @@ import Header from "./Header";
 
 const Hero = () => {
     return (
-        <section className="h-[800px] relative bg-accent/10 xl:bg-white">
+        <section className="h-[800px] relative bg-accent/10 xl:bg-white" id="home">
 
             {/* Header */}
             <Header />
@@ -43,7 +43,14 @@ const Hero = () => {
                 {/* Image */}
                 <div className="hidden xl:flex w-[55vw] h-[800px] absolute top-0 right-0 bg-accent">
                     <div className="absolute  w-[558px] h-[642px] bottom-0 z-40 left-[6.5vw]">
-                        <Image src="/assets/hero/img1.png" fill quality="100" priority  className="object-contain"/>
+                        <Image 
+                            src="/assets/hero/img1.png" 
+                            alt="Rushikesh Palande" 
+                            fill 
+                            quality="100" 
+                            priority 
+                            className="object-contain"
+                        />
                     </div>
 
                     {/* Arrow Shape */}
