@@ -5,19 +5,19 @@ import { RiInstagramFill, } from "react-icons/ri"
 const socials = [
     {
         icon: <RiInstagramFill />,
-        path: ""
+        path: "https://www.instagram.com/rishiii__0702/"
     },
     {
         icon: <FaFacebook />,
-        path: ""
+        path: "https://www.facebook.com/rishikesh.palande.9?mibextid=ZbWKwL"
     },
     {
         icon: <FaLinkedin />,
-        path: ""
+        path: "https://www.linkedin.com/in/rushikeshpalande07"
     },
     {
         icon: <FaGithub />,
-        path: ""
+        path: "https://github.com/RISHII7"
     },
 ];
 
