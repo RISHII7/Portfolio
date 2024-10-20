@@ -7,6 +7,7 @@ import { Link as ScrollLink } from "react-scroll";
 // Components
 import RotatingShape from "./RotatingShape";
 import Header from "./Header";
+import Stats from "./Stats/Stats";
 
 const Hero = () => {
     return (
@@ -37,7 +38,7 @@ const Hero = () => {
                         </button>
                     </ScrollLink>
                     {/* Stats */}
-                    <div>stats</div>
+                    <Stats />
                 </div>
 
                 {/* Image */}
