@@ -2,7 +2,9 @@
 
 import { Link as ScrollLink } from "react-scroll";
 
+// components
 import Logo from "./Logo";
+import Nav from "./Nav";
 
 const links = [
     {
@@ -29,10 +31,15 @@ const Header = () => {
                 <div className="flex flex-col lg:flex-row items-center gap-4 lg:justify-between">
                     {/* Logo */}
                     <Logo />
-
-                    {/* Nav and socials */}
-                    <div>nav</div>
-                    <div>socials</div>
+                    <div className="flex items-center gap-12">
+                        {/* Nav and socials */}
+                        <Nav 
+                            containerStyles="hidden xl:flex" 
+                            listStyles="flex gap-6" 
+                            linkStyles="text-primary font-primary text-lg tracking-[1.4px] transition-all duration-300 cursor-pointer" 
+                        />
+                        <div>socials</div>
+                    </div>
                 </div>
             </div>
         </header>
