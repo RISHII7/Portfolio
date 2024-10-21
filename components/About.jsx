@@ -83,7 +83,7 @@ const About = () => {
                             {/* Item 3  */}
                             <div className="max-w-max">
                                 <div className="uppercase font-bold text-primary">Phone</div>
-                                <p>+91 8459972812</p>
+                                <p>8459972812</p>
                             </div>
 
                             {/* Item 4  */}
