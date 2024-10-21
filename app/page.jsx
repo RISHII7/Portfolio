@@ -10,6 +10,7 @@ import About from "@/components/About";
 import Journey from "@/components/Journey";
 import Work from "@/components/Work/Work";
 import Contact from "@/components/Contact";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   
@@ -32,8 +33,10 @@ export default function Home() {
       <Journey />
       <Work />
       <Contact />
+      <Footer />
+
       {/* Temporary Div */}
-      <div className="h-[3000px]"></div>
+      {/* <div className="h-[3000px]"></div> */}
     </>
   );
 }

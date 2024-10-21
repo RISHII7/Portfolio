@@ -11,7 +11,7 @@ const WorkItem = ({ href, category, img, title }) => {
                 <Badge className="bg-primary text-base z-40 absolute top-6 left-6 capitalize">
                     {category}
                 </Badge>
-                <Image src={img} fill priority quality={100} className="object-cover group-hover:scale-105 transition-all duration-500" />
+                <Image src={img} fill priority quality={100} alt={title} className="object-cover group-hover:scale-105 transition-all duration-500" />
             </div>
             <div className="flex items-center justify-center">
                 <div className="flex-1">

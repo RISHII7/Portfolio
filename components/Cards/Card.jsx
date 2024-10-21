@@ -7,7 +7,7 @@ const Card = ({ type, logoUrl, duration, description, institution, qualification
                 <div className="flex flex-col h-full">
                     <div className="h-[80px] xl:h-[68px] bg-white flex flex-col xl:flex-row justify-center xl:justify-between items-center px-6 md:px-[84px] rounded-tl-[8px] rounded-t-[8px]">
                         <div className="flex gap-2">
-                            <Image src="/assets/journey/shape.svg" width={16} height={16} alt="" />
+                            <Image src="/assets/journey/shape.svg" width={16} height={16} alt="Shape" />
                             <h3 className="text-lg font-semibold text-primary">
                                 {type == "education" ? qualification : duration}
                             </h3>
@@ -28,7 +28,7 @@ const Card = ({ type, logoUrl, duration, description, institution, qualification
                             ) : (
                                 //render logo for education
                                 <div className="relative w-[300px] h-[38px] xl:h-[44px]">
-                                    <Image src={logoUrl} fill className="object-contain" alt="" />
+                                    <Image src={logoUrl} fill className="object-contain" alt="Logo" />
                                 </div>
                             )}
                             <div className="xl:border-l xl:border-secondary/10 xl:pl-12 w-full">
