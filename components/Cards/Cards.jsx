@@ -2,8 +2,8 @@
 
 import { motion, AnimatePresence } from "framer-motion";
 
-import { FaJs, FaReact, FaNodeJs, FaHtml5, FaCss3 } from "react-icons/fa"
 import { TbBrandNextjs } from "react-icons/tb"
+import { FaJs, FaReact, FaNodeJs, FaHtml5, FaCss3 } from "react-icons/fa"
 import { SiTypescript, SiExpress, SiMongodb, SiMysql, SiPostgresql } from "react-icons/si"
 
 import Card from "./Card";
@@ -11,14 +11,30 @@ import Card from "./Card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "../ui/tabs";
 
 const journey = [
+    {
+        type: "experience",
+        company: "Hamsa Hitech",
+        logoUrl: "/assets/journey/experience/company.svg",
+        position: "FullStack Developer Intern",
+        duration: "Dec 2023 - Mar 2024",
+        description: "Developed responsive web applications using React, Express.js, Node.js, and MongoDB, improving performance by 20% and reducing API response times by 30%. Collaborated in an agile environment, enhancing code quality through rigorous reviews and detailed technical documentation.",
+    },
+    {
+        type: "experience",
+        company: "Embed Square Solutions",
+        logoUrl: "/assets/journey/experience/company.svg",
+        position: "Software Developer Intern",
+        duration: "Jan 2025 - May 2025",
+        description: "Led  Spearheaded full-stack development with React, Node.js, and MongoDB, boosting UI performance by 35% and reducing backend latency by 40%. Integrated real-time data solutions and optimized database schemas, improving query efficiency by 45% and accelerating project delivery by 25%.",
+    },
     // Education
     {
         type: "education",
         institution: "Jaywantrao Sawant College of Engineering",
         logoUrl: "/assets/journey/education/institution.svg",
         qualification: "Master's in Computer Application",
-        duration: "Nov 2022 - Present",
-        description: "Currently pursuing my master's degree in Computer Application from JSCOE, Pune."
+        duration: "Nov 2022 - Dec 2024",
+        description: "Completed my master's degree in Computer Application from JSCOE, Pune."
     },
     {
         type: "education",
@@ -128,11 +144,30 @@ const journey = [
 const Cards = () => {
     return (
         <>
-            <Tabs defaultValue="education" className="w-full flex flex-col items-center">
+            <Tabs defaultValue="experience" className="w-full flex flex-col items-center">
                 <TabsList className="max-w-max mb-[30px]">
+                    <TabsTrigger value="experience">Experience</TabsTrigger>
                     <TabsTrigger value="education">Education</TabsTrigger>
                     <TabsTrigger value="skill">My Skills</TabsTrigger>
                 </TabsList>
+                {/* Experience */}
+                <TabsContent value="experience" className="w-full">
+                <AnimatePresence>
+                        <motion.div
+                            initial={{ opacity: 0, y: 20 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            exit={{ opacity: 0, y: 20 }}
+                            transition={{ duration: 0.3 }}
+                        >
+                            {journey
+                                .filter((item) => item.type === "experience")
+                                .map((card, index) => {
+                                    return <Card key={index} {...card} />
+                                })
+                            }
+                        </motion.div>
+                    </AnimatePresence>
+                </TabsContent>
                 {/* Education */}
                 <TabsContent value="education" className="w-full">
                     <AnimatePresence>
