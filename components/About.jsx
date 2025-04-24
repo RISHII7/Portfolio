@@ -46,7 +46,7 @@ const About = () => {
                                         />
                                 </motion.div>
                                 <div className="absolute text-center text-white">
-                                    <div className="text-5xl font-bold leading-none">20+</div>
+                                    <div className="text-5xl font-bold leading-none">25+</div>
                                     <div className="leading-none text-center mt-1">
                                         Websites <br /> Built
                                     </div>
@@ -71,13 +71,13 @@ const About = () => {
                             {/* Item 1  */}
                             <div className="max-w-max">
                                 <div className="uppercase font-bold text-primary">Age</div>
-                                <p>23 Years</p>
+                                <p>24 Years</p>
                             </div>
 
                             {/* Item 2  */}
                             <div className="max-w-max">
                                 <div className="uppercase font-bold text-primary">Born in</div>
-                                <p>Mumbai, Maharashtra</p>
+                                <p>Pune, Maharashtra</p>
                             </div>
 
                             {/* Item 3  */}

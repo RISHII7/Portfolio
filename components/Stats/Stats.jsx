@@ -2,17 +2,17 @@ import StatsItem from "./StatsItem";
 
 const statsData = [
     {
-        endCountNum: 300,
+        endCountNum: 500,
         endCountText: "+",
         text: "Commits on GitHub"
     },
     {
-        endCountNum: 20,
+        endCountNum: 25,
         endCountText: "+",
         text: "Websites Built"
     },
     {
-        endCountNum: 10,
+        endCountNum: 15,
         endCountText: "K+",
         text: "Lines of Code Written"
     },
